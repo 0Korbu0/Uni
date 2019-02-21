@@ -3,6 +3,8 @@
 
 #include "pch.h"
 #include <iostream>
+#include "nr3.h"
+
 
 int main()
 {
