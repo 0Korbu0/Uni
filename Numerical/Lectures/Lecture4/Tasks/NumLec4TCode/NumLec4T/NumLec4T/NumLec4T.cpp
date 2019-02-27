@@ -7,26 +7,26 @@
 #include <iostream>
 #include <svd.h>
 #include <ludcmp.h>
-
+#include <fstream>
 
 int main()
 {
 
 	//Start test of the code
-	std::cout << "Start test code" << endl;
+	std::cout << "Start test code" << std::endl;
 
 	// Import Data
 
 	//Pontius
 
 	VecDoub xPont(40); VecDoub yPont(40);
-	ifstream Pont("../Uni/Data/Lecture4/PontiusData.dat");
+	std::ifstream Pont("../Uni/Data/Lecture4/PontiusData.dat");
 	for (int i = 0; i < 40; i++) {
 		Pont >> yPont[i];
 		Pont >> xPont[i];
 	}
 
-	std::cout << yPont[1] << endl;
+	std::cout << yPont[1] << std::endl;
 
 	//Filip
 	/*
@@ -49,6 +49,7 @@ int main()
 
 	MatDoub x(4, 5);
 	MatDoub b(4, 5);
+
 
 
 	MatDoub TestA(3, 3);
